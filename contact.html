@@ -38,19 +38,19 @@
                 <p class=" fs-4">rizakaja@yahoo.com</p> 
             </div> 
             <div class="col-md-10 mx-auto col-lg-5"> 
-                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="https://formspree.io/f/mlgwqkgq" method="POST">
                    <!-- Name + Last Name -->
             <div class="row g-2">
                 <div class="col-md-6">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="firstName" required>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
                         <label for="firstName">Name*</label>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="lastName" required>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required>
                         <label for="lastName">Last Name*</label>
                     </div>
                 </div>
@@ -60,24 +60,27 @@
             <div class="row g-2 mt-2">
                 <div class="col-md-6">
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" id="email" name="email">
                         <label for="email">Email address</label>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="subject">
+                        <input type="text" class="form-control" id="subject" name="subject">
                         <label for="subject">Subject</label>
                     </div>
                 </div>
+
+                <input type="hidden" name="_replyto" value="email">
+
             </div>
 
             <br>
-                    <div class="form-floating mb-3"> 
-                        <input type="text" class="form-control" id="floatingInput" required> 
-                        <label for="floatingInput">Message*</label> 
-                    </div> 
+                    <div class="form-floating">
+                        <textarea class="form-control" name="message" required style="height:2rem; margin-bottom: 1rem"></textarea>
+                        <label>Message*</label>
+                    </div>
                     
                     <button class="w-100 btn btn-lg btn-warning" type="submit">Submit</button> 
                     <hr class="my-4"> 
@@ -108,9 +111,9 @@
                 <div>
                     <span class="fw-bold" style="font-size:x-large;">Follow Me</span><br>
                     <div class="d-flex gap-3" style="font-size: 1.4rem;">
-                        <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-dark"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.linkedin.com/in/riza-kaja-aab9121a1/" class="text-dark"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/risikaja" class="text-dark"><i class="bi bi-github"></i></a>
+                        <a href="contact.html" class="text-dark"><i class="bi bi-envelope-at-fill"></i></a>
                     </div>
                 </div>
             </div>
